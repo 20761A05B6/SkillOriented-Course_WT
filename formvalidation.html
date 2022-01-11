@@ -1,0 +1,17 @@
+<html>
+<head>Events</head>
+<body>
+<form name="N" action="Serveraddress">
+Name:<input type="text" name="n1"><br>
+Password:<input type="password" name="n2"><br>
+To display details:<input type="button" onclick="readValues()" value="click here"><br>
+<script>
+function readValues()
+{
+Name=N.n1.value;
+Password=N.n2.value;
+document.write("<br>Hello  "+Name+"<br>Your password is "+Password+" please check once");
+}
+</script>
+</body>
+</html>
