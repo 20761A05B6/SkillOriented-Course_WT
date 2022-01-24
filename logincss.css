@@ -1,0 +1,58 @@
+*{
+font-family: Arial, Helvetica, sans-serif;
+margin:0;
+padding:0;
+text-decoration:none;
+box-sizing:border-box;
+}
+body{
+	min-height:100vh;
+	background-color:pink;
+}
+form{
+	background-color:lavender;
+	width:350px;
+	height:500px;
+	padding:75px 50px;
+	position:absolute;
+	left:50%;
+	top:50%;
+	transform:translate(-50%,-50%);
+}
+.textBox{
+border-bottom:2px solid white;
+position:relative;
+margin:25px 0;
+}
+.textBox input{
+background:none;
+border:none;
+outline:none;
+width:100%;
+color:black;
+height:30px;
+font-size:20px;
+}
+.loginBtn{
+height:45px;
+width:100%;
+border:none;
+outline:none;
+background-color:grey;
+background-size:200%;
+color:white;
+font-size:15px;
+}
+.loginBtn:hover{
+background-position:left;
+font-size:17px;
+}
+.signup{
+color:black;
+margin-top:45px;
+text-align:center;
+}
+.signup a{
+color:purple;
+font-size:20px;
+}

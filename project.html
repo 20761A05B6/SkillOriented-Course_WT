@@ -1,0 +1,73 @@
+<html>
+<head><title>Project</title>
+<link rel="stylesheet" href="D:\html files\style.css"></head>
+<body>
+	<div class="fullpage">
+		<div class="navbar">
+			<div>
+				<h1>Gamizone</h1>
+			</div>
+			<nav>
+				<ul id="menuitem">
+					<li><a href="#">Home</li>
+					<li><a href="#">About us</li>
+					<li><a href="#">Services</li>
+					<li><a href="#">contact us</li>
+					<li><button class="loginbtn" onclick="document.getElementById('loginform').style.display='block'" style="width:auto;">Login</button></li>
+				</ul>
+			</nav>
+		</div>
+		<div id="loginform" class="loginpage">
+			<div class="formbox">
+				<div class="buttonbox">
+					<div id="btn"></div>
+					<button type="button" onclick="login()" class="togglebtn">Login</button>
+					<button type="button" onclick="register()" class="togglebtn">Register</button>
+				</div>
+				<form id="login" class="inputgrplogin">
+					<input type="text" class="inputfield"  placeholder="Email id" required>
+					<input type="password" class="inputfield"  placeholder="Password" required>
+					<input type="checkbox" class="checkbox"><span>Remember Password</span>
+					<button type="submit" class="submitbtn">Login</button>
+				</form>
+				<form id="register" class="inputgrpregister">
+					<input type="text" class="inputfield"  placeholder="First name" required>
+					<input type="text" class="inputfield"  placeholder="Last name" required>
+					<input type="email" class="inputfield" placeholder="Email id" required>
+					<input type="password" class="inputfield"  placeholder="Enter Password" required>
+					<input type="password" class="inputfield"  placeholder="Confirm Password" required>
+					<input type="checkbox" class="checkbox"><span>I agree to the terms and conditions</span>
+					<button type="submit" class="submitbtn">Register</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	<script>
+		var x=document.getElementById('login');
+		var y=document.getElementById('register');
+		var z=document.getElementById('btn');
+		function register()
+		{
+			x.style.left='-400px';
+			y.style.left='50px';
+			z.style.left='110px';
+		}
+		function login()
+		{
+			x.style.left='50px';
+			y.style.left='450px';
+			z.style.left='0px';
+		}
+	</script>
+	<script>
+		var modal=document.getElementById('loginform');
+		window.onclick=function(event)
+		{
+			if(event.target==modal)
+			{
+				modal.style.display="none";
+			}
+		}
+	</script>
+</body>
+</html>

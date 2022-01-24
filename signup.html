@@ -1,0 +1,80 @@
+<html>
+<head>
+<title>login</title>
+<style>
+*{
+font-family: Arial, Helvetica, sans-serif;
+margin:0;
+padding:0;
+text-decoration:none;
+box-sizing:border-box;
+}
+body{
+	min-height:100vh;
+	background-color:lavender;
+}
+form{
+background-color:pink;
+	width:350px;
+	height:500px;
+	padding:75px 50px;
+	position:absolute;
+	left:50%;
+	top:50%;
+	transform:translate(-50%,-50%);
+}
+.textBox{
+border-bottom:2px solid white;
+position:relative;
+margin:25px 0;
+}
+.textBox input{
+background:none;
+border:none;
+outline:none;
+width:100%;
+color:black;
+height:30px;
+font-size:20px;
+}
+.loginBtn{
+height:45px;
+width:100%;
+border:none;
+outline:none;
+background-color:purple;
+background-size:200%;
+color:white;
+font-size:15px;
+}
+.loginBtn:hover{
+background-position:left;
+font-size:17px;
+}
+.signup{
+color:black;
+margin-top:45px;
+text-align:center;
+}
+.signup a{
+color:purple;
+font-size:20px;
+}
+</style>
+</head>
+<body>
+<form>
+<font color="purple"><h1><center>SIGN UP<center></h1</font>
+<div class="textBox">
+<input type=text placeholder="username" name="n1"><br>
+</div>
+<div class="textBox">
+<input type=text placeholder="Email" name="n2"><br>
+</div>
+<div class="textBox">
+<input type=password placeholder="password" name="n2"><br>
+</div>
+<input type="submit" value="Create an account" class="loginBtn"><br>
+</form>
+</body>
+</html>
