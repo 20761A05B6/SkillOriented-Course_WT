@@ -1,0 +1,223 @@
+<html>
+<head><title>Tourism</title>
+<style>
+.links{
+font-family:sans-serif;
+text-align:right;
+}
+body{
+background-image:url("https://images.thrillophilia.com/image/upload/s--gptd7azP--/c_fill,f_auto,fl_strip_profile,h_775,q_auto,w_1600/v1/images/photos/000/012/900/original/1551428022_alleppeyPlaces_feature.png.jpg?1551428022");
+height: 100%;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+.head{
+font-size:100px;
+text-align:center;
+align:center;
+margin-top:100px;
+color:indigo;
+}
+.discover{
+font-size:20px;
+	color:black;
+	background-color:chocolate;
+	margin-left:45%;
+	border-radius:30px;
+}
+.topnav {
+  overflow: hidden;
+  background:transparent;
+}
+.topnav a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  border-radius:30px;
+}
+.topnav button {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  border-radius:30px;
+  background:transparent;
+  border:none;
+  outline:none;
+}
+.topnav a:hover {
+  background-color:pink;
+  color: black;
+}
+.topnav button:hover {
+  background-color:pink;
+  color: black;
+}
+#loginform{
+	display:none;
+}
+.formbox{
+	width:380px;
+	height:480px;
+	position:relative;
+	margin:2% auto;
+	background:white;
+	padding:10px;
+	overflow:hidden;
+}
+.buttonbox{
+	width:220px;
+	margin:35px auto;
+	position:relative;
+	box-shadow:0 0 20px 9px #ff61241f;
+	border-radius:30px;
+}
+.togglebtn{
+	padding:10px 30px;
+	cursor:pointer;
+	background:transparent;
+	border:0;
+	outline:none;
+	position:relative;
+}
+#btn{
+	top:0;
+	left:0;
+	position:absolute;
+	width:110px;
+	height:100%;
+	background:#F3C693;
+	border-radius:30px;
+	transition:.5s;
+}
+.inputgrplogin{
+	top:150px;
+	position:absolute;
+	width:280px;
+	transition:.5s;
+}
+.inputgrpregister{
+	top:120px;
+	position:absolute;
+	width:280px;
+	transition:.5s;
+}
+.inputfield{
+	width:100%;
+	padding:10px 0;
+	margin:5px 0;
+	border-left:0;
+	border-top:0;
+	border-right:0;
+	border-bottom:1px solid #999;
+	outline:none;
+	background:transparent;
+}
+.submitbtn{
+	width:85%;
+	padding:10px 30px;
+	cursor:pointer;
+	display:block;
+	margin:auto;
+	background:#F3C693;
+	border:0;
+	outline:none;
+	border-radius:30px;
+}
+.checkbox{
+	margin:30px 10px 34px 0;
+}
+span{
+	color:#777;
+	font-size:12px;
+	bottom:68px;
+	position:absolute;
+}
+#login{
+	left:50px;
+}
+#login input{
+	color:black;
+	font-size:15;
+}
+#register{
+	left:450px;
+}
+#register input{
+	color:black;
+	font-size:15;
+}
+</style>
+</head>
+<body>
+<div class="links">
+<table width="900" align="center" class="topnav">
+<tr align="center">
+<td><a href="E:\Nagasri\new 1.html">Home</td>
+<td><a href="#">Seasons</td>
+<td><a href="#">Book</td>
+<td><a href="#">Contact us</td>
+<td><button class="loginbtn" onclick="document.getElementById('loginform').style.display='block'" style="width:auto;">Login</button></td>
+</table>
+</div>
+<div id="loginform" class="loginpage">
+			<div class="formbox">
+				<div class="buttonbox">
+					<div id="btn"></div>
+					<button type="button" onclick="login()" class="togglebtn">Login</button>
+					<button type="button" onclick="register()" class="togglebtn">Register</button>
+				</div>
+				<form id="login" class="inputgrplogin">
+					<input type="text" class="inputfield"  placeholder="Email id" required>
+					<input type="password" class="inputfield"  placeholder="Password" required>
+					<input type="checkbox" class="checkbox"><span>Remember Password</span>
+					<button type="submit" class="submitbtn">Login</button>
+				</form>
+				<form id="register" class="inputgrpregister">
+					<input type="text" class="inputfield"  placeholder="First name" required>
+					<input type="text" class="inputfield"  placeholder="Last name" required>
+					<input type="email" class="inputfield" placeholder="Email id" required>
+					<input type="password" class="inputfield"  placeholder="Enter Password" required>
+					<input type="password" class="inputfield"  placeholder="Confirm Password" required>
+					<input type="checkbox" class="checkbox"><span>I agree to the terms and conditions</span>
+					<button type="submit" class="submitbtn">Register</button>
+				</form>
+			</div>
+		</div>
+		<script>
+		var x=document.getElementById('login');
+		var y=document.getElementById('register');
+		var z=document.getElementById('btn');
+		function register()
+		{
+			x.style.left='-400px';
+			y.style.left='50px';
+			z.style.left='110px';
+		}
+		function login()
+		{
+			x.style.left='50px';
+			y.style.left='450px';
+			z.style.left='0px';
+		}
+	</script>
+	<script>
+		var modal=document.getElementById('loginform');
+		window.onclick=function(event)
+		{
+			if(event.target==modal)
+			{
+				modal.style.display="none";
+			}
+		}
+	</script><br>
+<p class="head">Be a traveller</p>
+<button class="discover">Let's GO</button>
+</body>
+</html>
